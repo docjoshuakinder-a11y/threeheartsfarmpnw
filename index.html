@@ -146,8 +146,8 @@
         <div class="form-card" id="egg-form">
           <h3>Egg Subscription Interest</h3>
           <p>Sign up and we'll confirm availability and pickup details.</p>
-          <form id='egg-form-el' action='/thanks' method='POST' name='Egg Subscription Interest' data-netlify='true'>
-            <input type="hidden" name="form-name" value="egg-list" />
+          <form id='egg-form-el' action='/thanks' method='POST' name='egg-interest' data-netlify='true'>
+            <input type="hidden" name="form-name" value="egg-interest" />
             <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
             <div class="form-group">
               <label for="egg-name">Name</label>
@@ -195,7 +195,7 @@
         <div class="form-card" id="piglet-form">
           <h3>Piglet Waitlist</h3>
           <p>Reserve your spot for our spring litter.</p>
-          <form id='piglet-form-el' action='/thanks' method='POST' name='Piglet Waitlist' data-netlify='true'>
+          <form id='piglet-form-el' action='/thanks' method='POST' name='piglet-waitlist' data-netlify='true'>
             <input type="hidden" name="form-name" value="piglet-waitlist" />
             <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
             <div class="form-group">
@@ -357,41 +357,5 @@
       if (notes) fd.append('notes', notes.value||'');
       fd.append('_template','table');
       fd.append('_subject','Egg List submission — Three Hearts Farm');
-      postForm('https://formsubmit.co/ajax/thfkinderkids@gmail.com', fd)
-        .then(r=>r.json()).then(_=>{
-          eggBtn.outerHTML = '<p style="color:#72f1b8;font-weight:600">Submission received — we'll be in touch soon.</p>';
-        }).catch(_=>{ alert('Submission failed. Please email thfkinderkids@gmail.com'); });
-    });
-  }
-  // Piglet waitlist
-  var pigBtn = findByText('a,button', /Join Waitlist/i);
-  if (pigBtn){
-    pigBtn.addEventListener('click', function(ev){
-      ev.preventDefault();
-      var sec = findByText('section,div', /Piglet Waitlist/i) || document;
-      var name = q('input[type=text],input[name=name]', sec);
-      var email = q('input[type=email],input[name=email]', sec);
-      var phone = q('input[placeholder*="Phone" i],input[name=phone]', sec);
-      var many = q('select[aria-label="How Many"],select[name=many],select[name=count]', sec);
-      var purpose = q('select[aria-label="Purpose"],select[name=purpose]', sec);
-      var notes = q('textarea[name=notes],textarea', sec);
-      var fd = new FormData();
-      fd.append('form','piglet-waitlist');
-      if (name) fd.append('name', name.value||'');
-      if (email) fd.append('email', email.value||'');
-      if (phone) fd.append('phone', phone.value||'');
-      if (many) fd.append('howMany', many.value||'');
-      if (purpose) fd.append('purpose', purpose.value||'');
-      if (notes) fd.append('notes', notes.value||'');
-      fd.append('_template','table');
-      fd.append('_subject','Piglet Waitlist — Three Hearts Farm');
-      postForm('https://formsubmit.co/ajax/thfkinderkids@gmail.com', fd)
-        .then(r=>r.json()).then(_=>{
-          pigBtn.outerHTML = '<p style="color:#72f1b8;font-weight:600">Submission received — you're on the waitlist.</p>';
-        }).catch(_=>{ alert('Submission failed. Please email thfkinderkids@gmail.com'); });
-    });
-  }
-})();
-</script>
 </body>
 </html>

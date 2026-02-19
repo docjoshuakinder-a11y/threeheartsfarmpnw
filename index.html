@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Three Hearts Farm — Port Orchard, WA</title>
+  <meta name="description" content="Three Hearts Farm in Port Orchard, WA — pasture-raised eggs, Idaho Pasture Pigs, and a small family homestead guided by Joel Salatin and Wendell Berry.">
+  <meta property="og:title" content="Three Hearts Farm — Port Orchard, WA">
+  <meta property="og:description" content="Pasture-raised eggs · Idaho Pasture Pigs · Family homestead on the Kitsap Peninsula">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero-cow-full-1600.webp">
+  <meta name="theme-color" content="#2d5016">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/hero-cow-full-1600.webp" />
+  <meta name="color-scheme" content="light">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero" style="background: url('images/hero-cow-full-1600.webp') center bottom/contain no-repeat, linear-gradient(180deg, #1a2b16 0%, #2d5016 50%, #3d6a2a 100%);">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Port Orchard, Washington</p>
+      <h1>Three Hearts Farm</h1>
+      <p class="hero-sub">Pasture-raised eggs. Heritage pigs. A small family homestead.</p>
+      <div class="hero-cta">
+        <a href="#eggs" class="btn primary">Join Egg List</a>
+        <a href="#piglets" class="btn secondary">Piglet Waitlist</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <picture>
+            <source srcset="images/cow-card.webp" type="image/webp">
+            <img src="images/cow-card.jpg" alt="Jersey cow at Three Hearts Farm grazing in green pasture" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:24px;display:block" />
+          </picture>
+        </div>
+        <div class="about-text">
+          <h2>Rooted in the Land</h2>
+          <p class="lead">We're Joshua and Sherri Kinder — a veterinarian and his wife building a small, sustainable homestead on the Kitsap Peninsula.</p>
+          <p>Guided by Joel Salatin's regenerative methods and Wendell Berry's agrarian philosophy, we raise animals the way nature intended: on pasture, with care, and without shortcuts.</p>
+          <p>Our Jersey cow Buttercup, Idaho Pasture Pigs Rooster and Turnip, and a flock of heritage layer hens share the land with a growing orchard and vegetable garden.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Strip -->
+  <section class="values">
+    <div class="container">
+      <ul class="values-grid" role="list">
+        <li>
+          <h3>Pasture‑Raised</h3>
+          <p class="small">Animals on grass with room to roam — season by season.</p>
+        </li>
+        <li>
+          <h3>Stewardship</h3>
+          <p class="small">Regenerative practices inspired by Salatin & Berry.</p>
+        </li>
+        <li>
+          <h3>Local & Simple</h3>
+          <p class="small">Neighbor‑first food with honest ingredients.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Products Intro -->
+  <section class="products-intro" aria-labelledby="products-intro-heading">
+    <div class="container text-center">
+      <h2 id="products-intro-heading">From Our Pasture to Your Table</h2>
+      <p class="lead">Simple, honest food raised with integrity.</p>
+    </div>
+  </section>
+
+  <!-- Eggs -->
+  <section class="product-section" id="eggs">
+    <div class="container">
+      <div class="product-grid reverse">
+        <div class="product-image">
+          <picture>
+            <source srcset="images/chicken-card.webp" type="image/webp">
+            <img src="images/chicken-card.jpg" alt="Child holding a chicken under trees at Three Hearts Farm" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:32px;display:block" />
+          </picture>
+        </div>
+        <div class="product-content">
+          <span class="product-tag">Available Now</span>
+          <h2>Pasture-Raised Eggs</h2>
+          <p class="price">$7 per dozen</p>
+          <p>Our hens roam freely on pasture, foraging for bugs and grass the way chickens should. The result: rich, golden yolks and eggs that taste like eggs used to taste.</p>
+          <ul class="features">
+            <li>Biweekly pickup in Port Orchard</li>
+            <li>Wednesdays or Saturdays, 9am–5pm</li>
+            <li>Address provided after signup</li>
+          </ul>
+          <a href="#egg-form" class="btn primary">Join the Egg List</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Piglets -->
+  <section class="product-section alt" id="piglets">
+    <div class="container">
+      <div class="product-grid">
+        <div class="product-image">
+          <picture>
+            <source srcset="images/card-pigs2.webp" type="image/webp">
+            <img src="images/card-pigs2.jpg" alt="Two Idaho Pasture Pigs at Three Hearts Farm" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:32px;display:block" />
+          </picture>
+        </div>
+        <div class="product-content">
+          <span class="product-tag">Coming Spring 2026</span>
+          <h2>Idaho Pasture Piglets</h2>
+          <p class="price">$250 per piglet</p>
+          <p>Turnip is due in early May. Idaho Pasture Pigs are a heritage breed known for their docile temperament, excellent foraging ability, and outstanding meat quality.</p>
+          <ul class="features">
+            <li>Ideal for small farms and homesteads</li>
+            <li>Raised on pasture from birth</li>
+            <li>Available for breeding, pets, or meat</li>
+          </ul>
+          <a href="#piglet-form" class="btn primary">Join the Waitlist</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Forms Section -->
+  <section class="forms-section" id="forms">
+    <div class="container">
+      <div class="forms-grid">
+        
+        <!-- Egg Form -->
+        <div class="form-card" id="egg-form">
+          <h3>Egg Subscription Interest</h3>
+          <p>Sign up and we'll confirm availability and pickup details.</p>
+          <form id='egg-form-el' method='POST' name='egg-list' data-netlify="true">
+            <input type="hidden" name="form-name" value="egg-list" />
+            <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+            <div class="form-group">
+              <label for="egg-name">Name</label>
+              <input type="text" id="egg-name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="egg-email">Email</label>
+              <input type="email" id="egg-email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="egg-phone">Phone <span class="optional">(optional)</span></label>
+              <input type="tel" id="egg-phone" name="phone">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="egg-qty">Quantity</label>
+                <select id="egg-qty" name="quantity" required>
+                  <option value="1">1 dozen</option>
+                  <option value="2">2 dozen</option>
+                  <option value="3">3 dozen</option>
+                  <option value="4">4 dozen</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="egg-day">Pickup Day</label>
+                <select id="egg-day" name="day" required>
+                  <option value="wednesday">Wednesday</option>
+                  <option value="saturday">Saturday</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="egg-notes">Notes <span class="optional">(optional)</span></label>
+              <textarea id="egg-notes" name="notes" rows="3" placeholder="Any special requests or questions"></textarea>
+            </div>
+            <button type="submit" class="btn primary full">Join Egg List</button>
+          </form>
+          <div id="egg-success" class="success-message hidden">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <p>You're on the list! We'll be in touch soon.</p>
+          </div>
+        </div>
+
+        <!-- Piglet Form -->
+        <div class="form-card" id="piglet-form">
+          <h3>Piglet Waitlist</h3>
+          <p>Reserve your spot for our spring litter.</p>
+          <form id='piglet-form-el' method='POST' name='piglet-waitlist' data-netlify="true">
+            <input type="hidden" name="form-name" value="piglet-waitlist" />
+            <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+            <div class="form-group">
+              <label for="pig-name">Name</label>
+              <input type="text" id="pig-name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="pig-email">Email</label>
+              <input type="email" id="pig-email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="pig-phone">Phone</label>
+              <input type="tel" id="pig-phone" name="phone" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="pig-count">How Many</label>
+                <select id="pig-count" name="count" required>
+                  <option value="1">1 piglet</option>
+                  <option value="2">2 piglets</option>
+                  <option value="3">3 piglets</option>
+                  <option value="4">4+ piglets</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="pig-purpose">Purpose</label>
+                <select id="pig-purpose" name="purpose" required>
+                  <option value="breeder">Breeding</option>
+                  <option value="pet">Pet</option>
+                  <option value="meat">Meat</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="pig-notes">Notes <span class="optional">(optional)</span></label>
+              <textarea id="pig-notes" name="notes" rows="3" placeholder="Any preferences (sex, timing, etc.)"></textarea>
+            </div>
+            <button type="submit" class="btn primary full">Join Waitlist</button>
+          </form>
+          <div id="piglet-success" class="success-message hidden">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <p>You're on the waitlist! We'll reach out with details.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ & Map -->
+  <section class="faq-map">
+    <div class="container">
+      <div class="faq-grid">
+        <div class="faq">
+          <h3>Questions</h3>
+          <details>
+            <summary>How do pickups work?</summary>
+            <p>Choose Wednesday or Saturday, 9am–5pm. After you join the list, we’ll confirm availability and send pickup directions.</p>
+          </details>
+          <details>
+            <summary>Do you deliver?</summary>
+            <p>Not at this time. We’ll share any changes on this page and by email.</p>
+          </details>
+          <details>
+            <summary>Are your eggs washed?</summary>
+            <p>We follow Washington guidance and keep eggs refrigerated. Labeling details are provided on cartons.</p>
+          </details>
+          <details>
+            <summary>Do you sell milk?</summary>
+            <p>Not currently. Raw milk sales in WA require licensing; if we pursue this, we will publish the plan here.</p>
+          </details>
+        </div>
+        <div class="map">
+          <picture>
+            <source srcset="images/piglets-card.webp" type="image/webp">
+            <img src="images/piglets-card.jpg" alt="Piglets drinking from a bowl on straw at Three Hearts Farm" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:16px;display:block" />
+          </picture>
+          <p class="small" style="margin-top:12px; color:#6e6e73">We list our general area for privacy. Exact pickup location is provided after confirmation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <div class="newsletter-card">
+        <div>
+          <h3 id="newsletter-heading">Homestead Updates</h3>
+          <p class="small">Monthly notes from the farm — litters, egg surpluses, and seasonal harvests.</p>
+        </div>
+        <form id='newsletter-form' method='POST' name='newsletter' data-netlify="true">
+          <input type="hidden" name="form-name" value="newsletter" />
+          <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+          <label class="sr-only" for="news-email">Email</label>
+          <input type="email" id="news-email" name="email" placeholder="you@example.com" required>
+          <button class="btn secondary" type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div id="newsletter-success" class="success-message hidden" style="text-align:center; padding:16px 0;">
+        <p>Thanks for subscribing. We'll keep it simple and seasonal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#eggs">Eggs</a>
+        <a href="#piglets">Piglets</a>
+        <a href="#forms">Join</a>
+      </nav>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h4>Three Hearts Farm</h4>
+          <p>Port Orchard, Washington</p>
+        </div>
+        <div class="footer-contact">
+          <p><a href="mailto:thfkinderkids@gmail.com">thfkinderkids@gmail.com</a></p>
+          <p class="small">Pickup location provided after confirmation</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Three Hearts Farm. Raised with care on the Kitsap Peninsula.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Form handling (local demo)
+    function setupForm(formId, successId) {
+      const form = document.getElementById(formId);
+      const success = document.getElementById(successId);
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          form.style.display = 'none';
+          success.classList.remove('hidden');
+        });
+      }
+    }
+    setupForm('egg-form-el', 'egg-success');
+    setupForm('piglet-form-el', 'piglet-success');
+
+    // Newsletter (local demo)
+    const newsForm = document.getElementById('newsletter-form');
+    const newsSuccess = document.getElementById('newsletter-success');
+    if (newsForm) {
+      newsForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        newsForm.style.display = 'none';
+        newsSuccess.classList.remove('hidden');
+      });
+    }
+
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.about, .values, .product-section, .form-card, .faq-map, .newsletter').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  </script>
+
+<script>
+(function(){
+  function postForm(url, data){
+    return fetch(url, {method:'POST', headers:{'Accept':'application/json'}, body:data});
+  }
+  function q(sel, root){ return (root||document).querySelector(sel); }
+  function findByText(sel, re){ return Array.from(document.querySelectorAll(sel)).find(el => (el.textContent||'').match(re)); }
+  // Egg list
+  var eggBtn = findByText('a,button', /Join (the )?Egg List/i);
+  if (eggBtn){
+    eggBtn.addEventListener('click', function(ev){
+      ev.preventDefault();
+      var sec = findByText('section,div', /Egg Subscription/i) || document;
+      var name = q('input[type=text],input[name=name]', sec);
+      var email = q('input[type=email],input[name=email]', sec);
+      var phone = q('input[placeholder*="Phone" i],input[name=phone]', sec);
+      var qty = q('select[aria-label="Quantity"],select[name=quantity]', sec);
+      var day = q('select[aria-label="Pickup Day"],select[name=pickup],select[name=pickupDay]', sec);
+      var notes = q('textarea[name=notes],textarea', sec);
+      var fd = new FormData();
+      fd.append('form','egg-list');
+      if (name) fd.append('name', name.value||'');
+      if (email) fd.append('email', email.value||'');
+      if (phone) fd.append('phone', phone.value||'');
+      if (qty) fd.append('quantity', qty.value||'');
+      if (day) fd.append('pickupDay', day.value||'');
+      if (notes) fd.append('notes', notes.value||'');
+      fd.append('_template','table');
+      fd.append('_subject','Egg List submission — Three Hearts Farm');
+      postForm('https://formsubmit.co/ajax/thfkinderkids@gmail.com', fd)
+        .then(r=>r.json()).then(_=>{
+          eggBtn.outerHTML = '<p style="color:#72f1b8;font-weight:600">Submission received — we'll be in touch soon.</p>';
+        }).catch(_=>{ alert('Submission failed. Please email thfkinderkids@gmail.com'); });
+    });
+  }
+  // Piglet waitlist
+  var pigBtn = findByText('a,button', /Join Waitlist/i);
+  if (pigBtn){
+    pigBtn.addEventListener('click', function(ev){
+      ev.preventDefault();
+      var sec = findByText('section,div', /Piglet Waitlist/i) || document;
+      var name = q('input[type=text],input[name=name]', sec);
+      var email = q('input[type=email],input[name=email]', sec);
+      var phone = q('input[placeholder*="Phone" i],input[name=phone]', sec);
+      var many = q('select[aria-label="How Many"],select[name=many],select[name=count]', sec);
+      var purpose = q('select[aria-label="Purpose"],select[name=purpose]', sec);
+      var notes = q('textarea[name=notes],textarea', sec);
+      var fd = new FormData();
+      fd.append('form','piglet-waitlist');
+      if (name) fd.append('name', name.value||'');
+      if (email) fd.append('email', email.value||'');
+      if (phone) fd.append('phone', phone.value||'');
+      if (many) fd.append('howMany', many.value||'');
+      if (purpose) fd.append('purpose', purpose.value||'');
+      if (notes) fd.append('notes', notes.value||'');
+      fd.append('_template','table');
+      fd.append('_subject','Piglet Waitlist — Three Hearts Farm');
+      postForm('https://formsubmit.co/ajax/thfkinderkids@gmail.com', fd)
+        .then(r=>r.json()).then(_=>{
+          pigBtn.outerHTML = '<p style="color:#72f1b8;font-weight:600">Submission received — you're on the waitlist.</p>';
+        }).catch(_=>{ alert('Submission failed. Please email thfkinderkids@gmail.com'); });
+    });
+  }
+})();
+</script>
+</body>
+</html>
